@@ -1,0 +1,8 @@
+{
+	"nsi": {
+		"http-exposition": {
+			"port": 3010
+		},
+		"routes-helper": {}
+	}
+}

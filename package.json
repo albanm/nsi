@@ -1,0 +1,44 @@
+{
+  "name": "nsi",
+  "version": "0.0.0",
+  "description": "Node.js Services Integration",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "mocha -R spec examples/*/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/albanm/nsi.git"
+  },
+  "keywords": [
+    "ESB",
+    "services",
+    "integration",
+    "REST",
+    "SOAP",
+    "message",
+    "queues"
+  ],
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/albanm/nsi/issues"
+  },
+  "dependencies": {
+    "nsi-queues": "*",
+    "nsi-routes": "*"
+  },
+  "devDependencies": {
+    "mocha": "~1.20.1",
+    "should": "~4.0.4",
+    "express": "~4.6.1",
+    "amqp": "~0.2.0",
+    "stomp": "~0.1.1",
+    "request": "~2.37.0",
+    "body-parser": "~1.4.3",
+    "nconf": "~0.6.9"
+  }
+}
