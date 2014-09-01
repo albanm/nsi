@@ -5,7 +5,7 @@ Node.js Services Integration
 
 This project is not a framework or even a big library. It focuses on putting together the best node.js projects useful for integration of services purposes. Occasionaly we may provide small modules that help filling some gaps but mostly this is about recipes.
 
-What we will thrive to obtain:
+What we will strive to obtain:
   * Easy boostrapping of node.js services and exchange routes.
   * Examples served as small independant proof of concept projects for lots of usual scenarios.
   * Learn from experience and improve recipes in time to help create more robust and performant solutions.
