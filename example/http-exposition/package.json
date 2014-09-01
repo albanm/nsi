@@ -1,0 +1,23 @@
+{
+  "name": "nsi-example.http-exposition",
+  "version": "0.0.0",
+  "description": "Some example routes exposed as HTTP endpoints",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec"
+  },
+  "author": "Alban Mouton <alban.mouton@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "^1.21.4",
+    "request": "^2.40.0",
+    "should": "^4.0.4"
+  },
+  "dependencies": {
+    "body-parser": "^1.6.5",
+    "express": "^4.8.5",
+    "nconf": "^0.6.9",
+    "nsi-queues": "^0.4.0",
+    "nsi-routes": "^0.2.0"
+  }
+}

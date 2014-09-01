@@ -17,6 +17,12 @@ Sub-projects
   * [NSI - Routes commons](https://github.com/albanm/nsi-queues): Enforce some conventions, provide wrapper for profiling and tracing, plus some pre-packaged routes for usual needs.
   * [NSI - Queues helpers](https://github.com/albanm/nsi-queues): Makes it easier to communicate through message queues.
 
+Example
+-------
+
+An example can be found in this repository in the [example directory](./example).
+It is a continuing work in progress constitued of linked [docker](https://www.docker.com/) images containing NSI routes, mock services, monitoring, broker, etc.
+
 Asynchronous function convention for routes
 -------------------------------------------
 
@@ -41,19 +47,19 @@ Exchange messages over AMQP or STOMP
 Use [NSI - Queues helpers](https://github.com/albanm/nsi-queues):
 
 ```js
-queuesHelper.to('my-queue', 'my message', {header1: 'header1'}, function(err, message, headers) {
+queuesHelper.to('my-queue', 'my message', {header1: 'header1'}, function(err, body, headers) {
 	if (err) console.log('Message sending failed.');
 	else console.log('Message was sent and acknowledged !');
 });
 
-queuesHelper.inOut('my-queue', 'my message', {header1: 'header1'}, function(err, message, headers) {
+queuesHelper.inOut('my-queue', 'my message', {header1: 'header1'}, function(err, body, headers) {
 	if (err) console.log('Message sending failed.');
-	else console.log('Response received: ' + message);
+	else console.log('Response received: ' + body);
 });
 
-queuesHelper.from('my-queue', function(err, message, headers, responseCallback) {
+queuesHelper.from('my-queue', function(err, body, headers, responseCallback) {
 	// do something with message and prepare response
-	responseCallback(null, responseMessage, responseHeaders);
+	responseCallback(null, responseBody, responseHeaders);
 });
 ```
 

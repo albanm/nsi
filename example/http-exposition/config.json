@@ -1,0 +1,23 @@
+{
+	"nsiExample": {
+		"httpExposition": {
+			"port": 3010,
+			"routesHelper": {
+				"log": {
+					"config": {
+						"file": {
+							"level": "debug",
+							"filename": "http-exposition.log"
+						}
+					}
+				}
+			},
+			"queuesHelper": {
+				"type": "amqp",
+				"options": {
+					"host": "rabbitmq"
+				}
+			}
+		}
+	}
+}

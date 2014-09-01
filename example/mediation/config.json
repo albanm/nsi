@@ -1,0 +1,21 @@
+{
+	"nsiExample": {
+		"mediation": {
+			"port": 3011,
+			"routesHelper": {
+				"log": {
+					"config": {
+						"file": {
+							"level": "debug",
+							"filename": "/var/log/nsi-example/mediation.log"
+						}
+					}
+				}
+			},
+			"queuesHelper": {
+				"type": "amqp",
+				"options": {}
+			}
+		}
+	}
+}
