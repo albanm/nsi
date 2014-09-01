@@ -14,8 +14,8 @@ What we will strive to obtain:
 Sub-projects
 ------------
 
-  * [NSI - Routes commons](https://github.com/albanm/nsi-queues): Enforce some conventions, provide wrapper for profiling and tracing, plus some pre-packaged routes for usual needs.
-  * [NSI - Queues helpers](https://github.com/albanm/nsi-queues): Makes it easier to communicate through message queues.
+  * [NSI - Routes commons](https://github.com/albanm/nsi-routes): Enforce some conventions, provide wrapper for profiling and tracing, plus some pre-packaged routes for usual needs.
+  * [NSI - Queues helpers](https://github.com/albanm/nsi-queues): Make it easier to communicate through message queues.
 
 Example
 -------
